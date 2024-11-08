@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>KUET</h1>
+                </div>
+                <nav>
+                    <ul class="sticky-top">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- SLIDER -->
+        <div class="hero-slider">
+            <div class="slides">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <h2>Empowering the Engineers of Tomorrow</h2>
+                        <p>Innovate, Inspire, Impact at KUET</p>
+                        <a href="#" class="hero-button">Explore Our Programs</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>Join Our Community of Innovators</h2>
+                        <p>Discover your potential and shape the future.</p>
+                        <a href="#" class="hero-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+<section id="about" class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8">
+                <h2 class="section-title">About KUET</h2>
+                <p class="section-subtitle">
+                    Khulna University of Engineering & Technology (KUET) is dedicated to advancing knowledge, innovation, and technology. With a strong focus on research and excellence, KUET aims to shape the next generation of engineers, scientists, and leaders.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4 d-block d-lg-flex">
+                <div class="about-card p-4 rounded">
+                    <h4 class="about-card-title">Our Vision</h4>
+                    <p>To be a center of excellence in engineering and technology education and research, contributing to the nation’s sustainable development.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4 d-block d-lg-flex">
+                <div class="about-card p-4 rounded">
+                    <h4 class="about-card-title">Our Mission</h4>
+                    <p>Empowering students with cutting-edge knowledge and skills to address global challenges and innovate for a better tomorrow.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center ms-md-3">
+            <a href="#more" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 intro text-center">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle text-center">Explore a showcase of projects and activities highlighting KUET’s achievements and student work.</p>
+            </div>
+        </div>
+        </div>
+        <div id="project-slider" class="owl-theme owl-carousel">
+          <div class="project">
+            <img src="./img/academic-1.jpg">
+            <div class="overlay"></div>
+            <div class="content">
+             <h1>Project Title</h1>
+             <h6>KUET</h6>
+            </div>
+         </div>
+         <div class="project">
+            <img src="./img/Academic_4.png">
+            <div class="overlay"></div>
+            <div class="content">
+             <h1>Project Title</h1>
+             <h6>KUET</h6>
+            </div>
+         </div>
+         <div class="project">
+            <img src="./img/me1 (1).png">
+            <div class="overlay"></div>
+            <div class="content">
+             <h1>Project Title</h1>
+             <h6>KUET</h6>
+            </div>
+         </div>
+         <div class="project">
+            <img src="./img/Academic_3.png">
+            <div class="overlay"></div>
+            <div class="content">
+             <h1>Project Title</h1>
+             <h6>KUET</h6>
+            </div>
+         </div>
+          <!-- <div class="navigation">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>  -->
+          </div>
+      
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have questions? Reach out to us using the form below, and we’ll get back to you as soon as possible.</p>
+        </div>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group mb-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mb-4">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" class="form-control" placeholder="Enter the subject" required>
+            </div>
+            <div class="form-group mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+<hr>
+
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 mb-4">
+                <h5>About KUET</h5>
+                <p>Khulna University of Engineering & Technology is committed to academic excellence and research innovation.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#programs" class="footer-link">Programs</a></li>
+                    <li><a href="#admissions" class="footer-link">Admissions</a></li>
+                    <li><a href="#research" class="footer-link">Research</a></li>
+                    <li><a href="#contact-form" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact Information</h5>
+                <p>KUET, Fulbari Gate, Khulna-9203, Bangladesh</p>
+                <p>Email: info@kuet.ac.bd</p>
+                <p>Phone: +880 41 769472</p>
+                <div class="social-icons mt-3">
+                    <a href="#" class="footer-link me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-link me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="small">&copy; 2024 KUET. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+ 
+
+
+    <script src="./js/jquery min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    ,<script src="app.js"></script>
+</body>
+</html>
